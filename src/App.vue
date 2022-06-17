@@ -58,7 +58,7 @@ function frame() {
 }
 let framesCount = 0
 function startFrame() {
-  requestAnimationFrame(() => {
+  requestAnimationFrame(() => { // requestAnimationFrame解决帧数卡顿的问题
     framesCount += 1
     if (framesCount % 3 === 0)
       frame()
